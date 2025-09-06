@@ -1,0 +1,22 @@
+{
+	"name": "psd-to-layers",
+	"version": "1.0.0",
+	"description": "Extract all layers from PSD file and export them as PNG images",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": ["psd", "photoshop", "layers", "png", "extract"],
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"psd": "^3.3.0",
+		"canvas": "^2.11.2",
+		"fs-extra": "^11.1.1"
+	},
+	"engines": {
+		"node": ">=14.0.0"
+	}
+}
