@@ -1,6 +1,6 @@
+import { existsSync } from "node:fs";
+import fs from "node:fs/promises";
 import path from "node:path";
-import { createCanvas } from "canvas";
-import fs from "fs-extra";
 import PSD from "psd";
 
 /**
@@ -21,12 +21,12 @@ class PSDLayerExtractor {
 			console.log(`📁 PSDファイルを読み込み中: ${this.psdPath}`);
 
 			// PSDファイルの存在確認
-			if (!fs.existsSync(this.psdPath)) {
+			if (!existsSync(this.psdPath)) {
 				throw new Error(`PSDファイルが見つかりません: ${this.psdPath}`);
 			}
 
 			// 出力ディレクトリの作成
-			await fs.ensureDir(this.outputDir);
+			await fs.mkdir(this.outputDir, { recursive: true });
 			console.log(`📂 出力ディレクトリを作成: ${this.outputDir}`);
 
 			// PSDファイルを開く

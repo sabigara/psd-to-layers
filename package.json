@@ -5,16 +5,12 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"start": "node index.js",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "node index.js"
 	},
-	"keywords": ["psd", "photoshop", "layers", "png", "extract"],
 	"author": "",
 	"license": "MIT",
 	"dependencies": {
-		"psd": "^3.3.0",
-		"canvas": "^2.11.2",
-		"fs-extra": "^11.1.1"
+		"psd": "^3.3.0"
 	},
 	"engines": {
 		"node": ">=14.0.0"
