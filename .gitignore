@@ -1,56 +1,26 @@
-# .gitignore
-
-# Dependency directories
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Coverage directory used by tools like istanbul
-coverage/
-*.lcov
-
-# Output directories
-output/
-extracted_layers/
-layers/
-
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
 # Logs
 logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Optional npm cache directory
-.npm
+node_modules
+dist
+dist-ssr
+*.local
 
-# Optional eslint cache
-.eslintcache
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
-# Temporary folders
-tmp/
-temp/
-
-# PSD files (sample files for testing)
-*.psd
-!sample.psd
+output/
