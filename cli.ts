@@ -1,6 +1,7 @@
 import { existsSync } from "node:fs";
 import fs from "node:fs/promises";
 import path from "node:path";
+import "ag-psd/initialize-canvas";
 import { PSDLayerExtractor } from "./src/psd-extractor.ts";
 
 /**

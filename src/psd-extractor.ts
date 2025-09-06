@@ -1,6 +1,4 @@
 import { type Psd, readPsd } from "ag-psd";
-// Node.js環境でのCanvas初期化（ag-psdが自動でcanvasライブラリを検出）
-import "ag-psd/initialize-canvas";
 
 export interface LayerData {
 	name: string;
